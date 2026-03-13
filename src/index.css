@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts - keeping it clean and technical */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Core Color Palette - Deep Slate & Void */
+  --color-bg-base: #0a0a0a;      /* Pure dark background */
+  --color-bg-surface: #171717;   /* Slightly elevated for sections */
+  --color-bg-card: #262626;      /* For project cards/modals */
+
+  /* Typography Colors */
+  --color-text-main: #f5f5f5;    /* Crisp off-white */
+  --color-text-muted: #a3a3a3;   /* Secondary text, descriptions */
+
+  /* Accent - A sharp, vibrant purple (or swap to #10b981 for terminal green) */
+  --color-accent-primary: #8b5cf6;
+  --color-accent-hover: #7c3aed;
+
+  /* Borders & Lines */
+  --color-border-subtle: #404040;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-base text-text-main font-sans antialiased;
+    /* Custom selection color to match the accent */
+    ::selection {
+      @apply bg-accent-primary text-white;
+    }
+  }
+
+  /* Force headings to use the monospace font for that technical feel */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-mono tracking-tight;
+  }
+}
+
+/* Custom scrollbar to match the dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-bg-base;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-bg-card rounded-full hover:bg-border-subtle transition-colors;
+}
