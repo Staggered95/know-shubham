@@ -6,6 +6,18 @@ const ProjectCard = ({ project }) => {
   const [mediaIndex, setMediaIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // Auto-play Carousel Effect
+  useEffect(() => {
+    // Stop the timer if the modal is open, or if there is 1 or fewer media items
+    if (isModalOpen || !project.media || project.media.length <= 1) return;
+
+    const timer = setInterval(() => {
+      setMediaIndex((prev) => (prev + 1) % project.media.length);
+    }, 3500); // Slides every 3.5 seconds
+
+    return () => clearInterval(timer);
+  }, [isModalOpen, project.media]);
+
   // Lock body scroll when modal is open
   useEffect(() => {
     if (isModalOpen) {
@@ -112,7 +124,7 @@ const ProjectCard = ({ project }) => {
         )}
 
         {/* Content Body */}
-        <div className="p-6 flex flex-col grow">
+        <div className="p-6 flex flex-col flex-grow">
           <div className="flex justify-between items-start mb-4">
             <div>
               <h3 className="text-xl font-bold text-text-main group-hover:text-accent-primary transition-colors">
@@ -137,7 +149,7 @@ const ProjectCard = ({ project }) => {
             </div>
           </div>
 
-          <p className="text-text-muted mb-6 text-sm leading-relaxed grow">
+          <p className="text-text-muted mb-6 text-sm leading-relaxed flex-grow">
             {project.description}
           </p>
 
@@ -167,11 +179,11 @@ const ProjectCard = ({ project }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-100 flex items-center justify-center bg-black/95 backdrop-blur-md p-4 md:p-8"
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-md p-4 md:p-8"
             onClick={() => setIsModalOpen(false)}
           >
             <button 
-              className="absolute top-6 right-6 text-white/70 hover:text-white bg-black/50 p-2 rounded-full transition-colors z-110"
+              className="absolute top-6 right-6 text-white/70 hover:text-white bg-black/50 p-2 rounded-full transition-colors z-[110]"
               onClick={() => setIsModalOpen(false)}
             >
               <X size={24} />
@@ -179,7 +191,7 @@ const ProjectCard = ({ project }) => {
 
             <div 
               className="relative w-full max-w-6xl max-h-full flex items-center justify-center"
-              onClick={(e) => e.stopPropagation()} // Prevent clicking image from closing modal
+              onClick={(e) => e.stopPropagation()} 
             >
               {currentMedia.type === 'video' ? (
                 <video
@@ -215,7 +227,6 @@ const ProjectCard = ({ project }) => {
               )}
             </div>
             
-            {/* Image Counter */}
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/70 font-mono text-sm bg-black/50 px-4 py-1.5 rounded-full backdrop-blur-md">
               {mediaIndex + 1} / {project.media.length}
             </div>
