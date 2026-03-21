@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Shubham Singh",
-  role: "Full-Stack Developer (PERN)",
+  role: "Full-Stack Developer (PERN/MERN)",
   tagline: "I love web development, Linux, tinkering, and breaking things.",
   email: "shubhamsinghup720@gmail.com",
   phone: "+91-9548370206", // Drop your number here
