@@ -43,19 +43,19 @@ export const projects = [
     githubRepo: "https://github.com/Staggered95/yume-tunes",
     liveDemo: "https://yumetunes.duckdns.org/", 
     media: {
-      logo: "/assets/yume-tunes/logo.png",
+      logo: "/assets/yume-tunes/logo.jpg",
       desktop: [
-        "/assets/yume-tunes/carousal.png",
-        "/assets/yume-tunes/continue-recommended.png",
-        "/assets/yume-tunes/with-lyrics.png",
-        "/assets/yume-tunes/library.png",
-        "/assets/yume-tunes/user-page.png",
-        "/assets/yume-tunes/analytics.png",
-        "/assets/yume-tunes/admin-page.png",
-        "/assets/yume-tunes/add-song.png",
-        "/assets/yume-tunes/admin-add-times-lyrics.png",
-        "/assets/yume-tunes/animes.png",
-        "/assets/yume-tunes/artists.png",
+        "/assets/yume-tunes/carousal.jpg",
+        "/assets/yume-tunes/continue-recommended.jpg",
+        "/assets/yume-tunes/with-lyrics.jpg",
+        "/assets/yume-tunes/library.jpg",
+        "/assets/yume-tunes/user-page.jpg",
+        "/assets/yume-tunes/analytics.jpg",
+        "/assets/yume-tunes/admin-page.jpg",
+        "/assets/yume-tunes/add-song.jpg",
+        "/assets/yume-tunes/admin-add-times-lyrics.jpg",
+        "/assets/yume-tunes/animes.jpg",
+        "/assets/yume-tunes/artists.jpg",
       ],
       mobile: [
         "/assets/yume-tunes/home-sm.jpg",
@@ -83,15 +83,15 @@ export const projects = [
     timeTaken: "140 hours",
     githubRepo: "https://github.com/Staggered95/slice-of-rice",
     media: [
-      { type: "image", url: "/assets/slice-of-rice/1c.png" },
-      { type: "image", url: "/assets/slice-of-rice/1e.png" },
-      { type: "image", url: "/assets/slice-of-rice/1g.png" },
-      { type: "image", url: "/assets/slice-of-rice/2c.png" },
-      { type: "image", url: "/assets/slice-of-rice/2e.png" },
-      { type: "image", url: "/assets/slice-of-rice/2g.png" },
-      { type: "image", url: "/assets/slice-of-rice/3c.png" },
-      { type: "image", url: "/assets/slice-of-rice/3e.png" },
-      { type: "image", url: "/assets/slice-of-rice/3g.png" },
+      { type: "image", url: "/assets/slice-of-rice/1c.jpg" },
+      { type: "image", url: "/assets/slice-of-rice/1e.jpg" },
+      { type: "image", url: "/assets/slice-of-rice/1g.jpg" },
+      { type: "image", url: "/assets/slice-of-rice/2c.jpg" },
+      { type: "image", url: "/assets/slice-of-rice/2e.jpg" },
+      { type: "image", url: "/assets/slice-of-rice/2g.jpg" },
+      { type: "image", url: "/assets/slice-of-rice/3c.jpg" },
+      { type: "image", url: "/assets/slice-of-rice/3e.jpg" },
+      { type: "image", url: "/assets/slice-of-rice/3g.jpg" },
     ]
   },
   {
@@ -109,11 +109,11 @@ export const projects = [
     githubRepo: "https://github.com/Staggered95/food-listing-app",
     liveDemo: "https://afcfood.in (Archived)",
     media: [
-      { type: "image", url: "/assets/afc-food/dashboard.png" },
-      { type: "image", url: "/assets/afc-food/admin-panel.png" },
-      { type: "image", url: "/assets/afc-food/wishlist.png" },
-      { type: "image", url: "/assets/afc-food/support.png" },
-      { type: "image", url: "/assets/afc-food/login.png" },
+      { type: "image", url: "/assets/afc-food/dashboard.jpg" },
+      { type: "image", url: "/assets/afc-food/admin-panel.jpg" },
+      { type: "image", url: "/assets/afc-food/wishlist.jpg" },
+      { type: "image", url: "/assets/afc-food/support.jpg" },
+      { type: "image", url: "/assets/afc-food/login.jpg" },
     ]
   },
   {
@@ -137,10 +137,10 @@ export const projects = [
     features: ["Real-time AI responses", "Minimalist chat UI"],
     githubRepo: "https://github.com/Staggered95/ai-based-adventure-planner",
     media: [
-      { type: "image", url: "/assets/ai-adventure-planner/home.png" },
-      { type: "image", url: "/assets/ai-adventure-planner/data-form.png" },
-      { type: "image", url: "/assets/ai-adventure-planner/chat1.png" },
-      { type: "image", url: "/assets/ai-adventure-planner/chat2.png" },
+      { type: "image", url: "/assets/ai-adventure-planner/home.jpg" },
+      { type: "image", url: "/assets/ai-adventure-planner/data-form.jpg" },
+      { type: "image", url: "/assets/ai-adventure-planner/chat1.jpg" },
+      { type: "image", url: "/assets/ai-adventure-planner/chat2.jpg" },
     ]
   },
   {
@@ -152,11 +152,11 @@ export const projects = [
     features: ["Leaderboard system", "User Auth"],
     githubRepo: "https://github.com/Staggered95/quiz-game",
     media: [
-      { type: "image", url: "/assets/quiz-game/dashboard.png" },
-      { type: "image", url: "/assets/quiz-game/quiz.png" },
-      { type: "image", url: "/assets/quiz-game/leaderboard.png" },
-      { type: "image", url: "/assets/quiz-game/admin.png" },
-      { type: "image", url: "/assets/quiz-game/login.png" },
+      { type: "image", url: "/assets/quiz-game/dashboard.jpg" },
+      { type: "image", url: "/assets/quiz-game/quiz.jpg" },
+      { type: "image", url: "/assets/quiz-game/leaderboard.jpg" },
+      { type: "image", url: "/assets/quiz-game/admin.jpg" },
+      { type: "image", url: "/assets/quiz-game/login.jpg" },
     ]
   }
 ];
