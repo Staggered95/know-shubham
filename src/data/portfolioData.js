@@ -160,3 +160,42 @@ export const projects = [
     ]
   }
 ];
+
+export const certificates = [
+  {
+    id: "nptel-cloud",
+    title: "Cloud Computing",
+    issuer: "NPTEL",
+    image: "/assets/certificates/nptel-cloud-computing-certificate.png"
+  },
+  {
+    id: "fcc-rwd",
+    title: "Responsive Web Design",
+    issuer: "freeCodeCamp",
+    image: "/assets/certificates/freecodecamp-responsive-web-design-certificate.png"
+  },
+  {
+    id: "cipher-mern",
+    title: "MERN Stack Development",
+    issuer: "Cipher Schools",
+    image: "/assets/certificates/cipher-schools-mern-stack-certificate.png"
+  },
+  {
+    id: "rcs-ctf",
+    title: "Cybersecurity Hackathon (CTF)",
+    issuer: "RCS",
+    image: "/assets/certificates/rcs-ctf-cybersecurity-hackathon-certificate.png"
+  },
+  {
+    id: "js-course",
+    title: "JavaScript Mastery",
+    issuer: "Course Certification",
+    image: "/assets/certificates/javascript-course-certificate.jpg"
+  },
+  {
+    id: "cpp-course",
+    title: "C++ Programming",
+    issuer: "Course Certification",
+    image: "/assets/certificates/cpp-certificate.png"
+  }
+];
