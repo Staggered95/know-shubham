@@ -3,7 +3,7 @@ export const personalInfo = {
   role: "Full-Stack Developer (PERN/MERN)",
   tagline: "I love web development, Linux, tinkering, and breaking things.",
   email: "shubhamsinghup720@gmail.com",
-  phone: "+91-9548370206", // Drop your number here
+  phone: "+91-9548370206", 
   about: `I build for clarity. While the world can often seem chaotic or devoid of inherent meaning, I find purpose in the process: copy, understand, create anew, and learn. I am driven by an intense curiosity for tech, space, and science, and I can easily lock in for hours of uninterrupted focus to solve complex problems. Whether I'm ricing Arch Linux, building full-stack applications, or drawing motivation from anime, I believe that relentless dedication to what you love is all that matters.`,
   philosophy: "Copy, understand, create anew, and learn.",
   pfp: "assets/me.jpg"
@@ -22,7 +22,7 @@ export const socialLinks = {
   github: "https://github.com/Staggered95",
   leetcode: "https://leetcode.com/u/NerWt2lDYa/",
   reddit: "https://www.reddit.com/user/Original-Creme-1716/",
-  cv: "/assets/Shubham_Singh_CV.pdf", // Make sure to add your CV here
+  cv: "/assets/Shubham_Singh_CV.pdf", 
 };
 
 export const projects = [

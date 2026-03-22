@@ -23,7 +23,7 @@ const CertificateCard = ({ cert }) => {
       >
         {/* Image Container */}
         <div 
-          className="relative w-full aspect-[4/3] bg-bg-base border-b border-border-subtle overflow-hidden cursor-pointer"
+          className="relative w-full aspect-4/3 bg-bg-base border-b border-border-subtle overflow-hidden cursor-pointer"
           onClick={() => setIsModalOpen(true)}
         >
           <div className="absolute top-3 right-3 z-20 bg-black/60 p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
@@ -55,11 +55,11 @@ const CertificateCard = ({ cert }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-md p-4 md:p-8"
+            className="fixed inset-0 z-100 flex items-center justify-center bg-black/95 backdrop-blur-md p-4 md:p-8"
             onClick={() => setIsModalOpen(false)}
           >
             <button 
-              className="absolute top-6 right-6 text-white/70 hover:text-white bg-black/50 p-2 rounded-full transition-colors z-[110]"
+              className="absolute top-6 right-6 text-white/70 hover:text-white bg-black/50 p-2 rounded-full transition-colors z-110"
               onClick={() => setIsModalOpen(false)}
             >
               <X size={24} />
