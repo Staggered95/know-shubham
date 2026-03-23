@@ -18,7 +18,7 @@ const Skills = () => {
               {category}
             </h3>
             
-            {/* Skills List */}
+            {/* Skills List  */}
             <ul className="flex flex-wrap gap-2">
               {skillList.map((skill) => (
                 <li 
