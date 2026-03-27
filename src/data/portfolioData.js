@@ -11,7 +11,7 @@ export const personalInfo = {
 
 export const skills = {
   frontend: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
-  backend: ["Node.js", "Express", "PHP", "Laravel"],
+  backend: ["Node.js", "Express", "PHP"],
   database: ["PostgreSQL", "MySQL", "MongoDB"],
   languages: ["C", "C++ (DSA Expertise)", "Java"],
   tools: ["Git", "GitHub", "Docker", "Linux (Arch)", "Neovim", "VSCode", "AWS (EC2)", "Nginx"],
